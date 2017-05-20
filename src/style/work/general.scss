@@ -1,0 +1,276 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #272f45;
+  color: #fff;
+  font-family: "HK Grotesk";
+  font-size: 24px;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {color: inherit;}
+input{
+  outline:none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 190px;
+  padding-top: 10px;
+}
+.search {
+  position: relative;
+  color: #92a1a9;
+
+  input {
+    background-color: transparent;
+    border-bottom: 3px solid rgb(99, 117, 126);
+    width: 175px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-left: 35px;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 7px;
+    left: 2px;
+  }
+}
+
+.main-page {
+  position: relative;
+  background-image: url(../resources/images/main-page-bg.png);
+  background-size: cover;
+
+  &__content {
+    max-width: 410px;
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-bottom: 115px;
+    text-align: left;
+  }
+
+  &__header {
+    font-size: 80px;
+    font-family: "League Spartan";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  &__text {
+    padding-bottom: 100px;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  &__bage {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 110px;
+    height: 110px;
+  }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  &__sm {
+    width: 160px;
+    height: 55px;
+    border: 3px solid #eec9a2;
+  }
+
+  &__xs {
+    width: 120px;
+    height: 45px;
+    border: 3px solid #eec9a2;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__bg {
+    width: 360px;
+    height: 60px;
+    font-size: 18px;
+    font-family: "League Spartan";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    border: 3px solid #82c9d8;
+    background-color: transparent;
+  }
+
+  &-wrapper {
+    padding-top: 10px;
+  }
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.offer-bg {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  height: 520px;
+  box-sizing: border-box;
+  min-width: 500px;
+
+  &-left {
+    background: url(../resources/images/Beoplay-product.png) no-repeat;
+    background-size: cover;
+    padding: 60px 30px 225px 0px;
+    align-items: flex-end;
+  }
+  &-right {
+    background: url(../resources/images/Leica-product.png) no-repeat;
+    background-size: cover;
+    padding: 60px 0px 225px 30px;
+    align-items: flex-start;
+  }
+
+  &__header {
+    font-size: 48px;
+    font-family: "League Spartan";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.886;
+  }
+
+  &__text {
+    padding-bottom: 40px;
+    line-height: 1.2;
+    text-align: right;
+  }
+}
+
+.offer-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 31%;
+  height: 440px;
+  box-sizing: border-box;
+
+
+  &-left {
+    background: url(../resources/images/Molekule-product.png) center no-repeat;
+
+    padding-top: 50px;
+  }
+
+  &-center {
+    background: url(../resources/images/P9-product.png) center no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+  }
+
+  &-right {
+    background: url(../resources/images/DR-II-product.png) center no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+  }
+
+  &__text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  }
+
+  &__header {
+    font-size: 36px;
+    font-family: "League Spartan";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.181;
+    margin-bottom: 15px;
+  }
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+
+  &__header {
+  font-size: 36px;
+  color: rgb(146, 161, 169);
+  line-height: 1.2;
+  text-align: center;
+  }
+
+  &__text {
+    max-width: 820px;
+    padding-bottom: 35px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(127, 145, 155);
+    line-height: 1.2;
+  }
+
+  &__input {
+    width: 360px;
+    height: 60px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(146, 161, 169);
+    border: 3px solid #63757e;
+    background-color: transparent;
+  }
+
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 95px;
+
+  &__nav {
+    text-align: justify;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: rgb(127, 145, 155);
+    line-height: 1.2;
+  }
+}
+.nav__item {
+  display: inline-flex;
+  color: rgb(146, 161, 169);
+  line-height: 1.2;
+}
