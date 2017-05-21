@@ -5,7 +5,7 @@
   }
 }
 
-@media (max-width:1000px) {
+@media (max-width:1100px) {
   .row {
     justify-content: center;
   }
@@ -21,7 +21,7 @@
   }
 }
 
-@media (max-width:968px) {
+@media (max-width:1000px) {
   .offer-sm {
     width: 80%;
     background-size: contain;
@@ -30,24 +30,42 @@
 }
 
 @media (max-width:600px) {
+  body {
+    min-width: 300px;
+  }
   .logo {
-    min-width: 400px;
+    min-width: 350px;
   }
   .header {
     justify-content: flex-end;
     font-size: 18px;
   }
+  .main-page {
+    &__header {
+      font-size: 70px;
+      padding-top: 20px;
+    }
+  }
   .offer-bg  {
     width: 100%;
     min-width: 300px;
     padding-left: 30px;
+    &__header {
+      font-size: 38px;
+    }
+    &__text-right {
+      padding-right: 20px;
+    }
+  }
+  .offer-sm {
+    width: 100%;
   }
   .newsletter {
     padding-top: 0;
   }
   .footer {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 30px;
     &__nav {
       text-align: center;
     }
@@ -56,4 +74,12 @@
     padding-bottom: 20px;
     align-self: center;
   }
+}
+@media (max-width: 400px) {
+  .offer-bg {
+    &__header {
+      font-size: 28px;
+    }
+  }
+
 }

@@ -138,19 +138,20 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 40px 0;
-}
+  perspective: 100vw;
+  }
 .offer-bg {
   display: flex;
   flex-direction: column;
   width: 48%;
   height: 520px;
   box-sizing: border-box;
-  min-width: 500px;
+
 
   &-left {
     background: url(../resources/images/Beoplay-product.png) no-repeat;
     background-size: cover;
-    padding: 60px 30px 225px 0px;
+    padding: 60px 30px 225px 30px;
     align-items: flex-end;
   }
   &-right {
@@ -173,7 +174,13 @@ ul {
     padding-bottom: 40px;
     line-height: 1.2;
     text-align: right;
-  }
+    }
+    &__text-right {
+      padding-bottom: 40px;
+      line-height: 1.2;
+      text-align: left;
+    }
+
 }
 
 .offer-sm {
@@ -184,10 +191,8 @@ ul {
   height: 440px;
   box-sizing: border-box;
 
-
   &-left {
     background: url(../resources/images/Molekule-product.png) center no-repeat;
-
     padding-top: 50px;
   }
 

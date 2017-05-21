@@ -532,7 +532,8 @@ ul {
       flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 40px 0; }
+  margin: 40px 0;
+  perspective: 100vw; }
 
 .offer-bg {
   display: -ms-flexbox;
@@ -541,12 +542,11 @@ ul {
       flex-direction: column;
   width: 48%;
   height: 520px;
-  box-sizing: border-box;
-  min-width: 500px; }
+  box-sizing: border-box; }
   .offer-bg-left {
     background: url(../resources/images/Beoplay-product.png) no-repeat;
     background-size: cover;
-    padding: 60px 30px 225px 0px;
+    padding: 60px 30px 225px 30px;
     -ms-flex-align: end;
         align-items: flex-end; }
   .offer-bg-right {
@@ -566,6 +566,10 @@ ul {
     padding-bottom: 40px;
     line-height: 1.2;
     text-align: right; }
+  .offer-bg__text-right {
+    padding-bottom: 40px;
+    line-height: 1.2;
+    text-align: left; }
 
 .offer-sm {
   display: -ms-flexbox;
@@ -658,7 +662,7 @@ ul {
     padding-left: 20px;
     padding-right: 20px; } }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .row {
     -ms-flex-pack: center;
         justify-content: center; }
@@ -670,28 +674,39 @@ ul {
   .newsletter {
     padding: 0 20px; } }
 
-@media (max-width: 968px) {
+@media (max-width: 1000px) {
   .offer-sm {
     width: 80%;
     background-size: contain;
     margin-bottom: 40px; } }
 
 @media (max-width: 600px) {
+  body {
+    min-width: 300px; }
   .logo {
-    min-width: 400px; }
+    min-width: 350px; }
   .header {
     -ms-flex-pack: end;
         justify-content: flex-end;
     font-size: 18px; }
+  .main-page__header {
+    font-size: 70px;
+    padding-top: 20px; }
   .offer-bg {
     width: 100%;
     min-width: 300px;
     padding-left: 30px; }
+    .offer-bg__header {
+      font-size: 38px; }
+    .offer-bg__text-right {
+      padding-right: 20px; }
+  .offer-sm {
+    width: 100%; }
   .newsletter {
     padding-top: 0; }
   .footer {
     text-align: center;
-    padding: 40px 20px; }
+    padding: 40px 30px; }
     .footer__nav {
       text-align: center; }
   .nav__item {
@@ -699,5 +714,9 @@ ul {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center; } }
+
+@media (max-width: 400px) {
+  .offer-bg__header {
+    font-size: 28px; } }
 
 /*# sourceMappingURL=main.css.map */
